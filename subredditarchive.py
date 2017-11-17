@@ -20,7 +20,7 @@ b = "timestamp:"
 d = ".."
 
 #Config Details-
-r = praw.Reddit('searchandarchive by ')
+r = praw.Reddit('data_fn')
 def resume():
 	if os.path.exists('config.txt'):
 		line = file('config.txt').read()
