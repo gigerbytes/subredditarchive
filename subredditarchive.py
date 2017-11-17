@@ -29,6 +29,8 @@ def resume():
 		return startStamp,endStamp,step,subName
 	else:
 		return 0
+startStamp,endStamp,step,subName=resume()
+'''
 choice = input('\nMENU\nPlease choose one of the following:\n1. Start New Archive\n2. Continue Archiving\n3. Exit\n(Input the number)\n')
 if(choice==1):
 	subName=raw_input('Input the subreddit to archive: ')
@@ -48,6 +50,7 @@ elif(choice==2):
 		exit()
 else:
 	exit()	
+'''
 sdate=datetime.datetime.fromtimestamp(int(startStamp)).strftime('%d-%m-%Y')
 edate=datetime.datetime.fromtimestamp(int(endStamp)).strftime('%d-%m-%Y')
 folderName=str(subName+' '+str(sdate)+' '+str(edate))
